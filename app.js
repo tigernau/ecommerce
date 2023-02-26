@@ -1,9 +1,11 @@
-import compression from "compression";
+"use strict";
+import {} from "dotenv/config"; // instead of import dotenv from 'dotenv' then dotenv.config()
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-const app = express();
+import compression from "compression";
 
+const app = express();
 // init middlewares
 app.use(morgan("dev"));
 app.use(helmet());
